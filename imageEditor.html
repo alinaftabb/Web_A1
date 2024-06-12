@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="imageEditor.css" />
+    <script src="imageEditor.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="new-nav">
+      <p>Online Image Editor</p>
+    </nav>
+
+    <div class="new-body">
+      <input
+        type="file"
+        accept="image/*"
+        class="new-input"
+        id="imageInput"
+        style="display: none"
+      />
+      <input class="new-input" placeholder="Choose Image" />
+      <label for="imageInput" class="new-browse-btn">
+        <span>Browse</span>
+      </label>
+    </div>
+    <div class="new-image">
+      <img src="" id="image" />
+    </div>
+
+    <div class="new-footer">
+      <p>Filters</p>
+      <div class="new-filters">
+        <div class="new-filter">
+          <div class="new-square" id="brightness-minus">-</div>
+          <div>Brightness</div>
+          <div class="new-square" id="brightness-plus">+</div>
+        </div>
+        <div class="new-filter">
+          <div class="new-square" id="contrast-minus">-</div>
+          <div>Contrast</div>
+          <div class="new-square" id="contrast-plus">+</div>
+        </div>
+        <div class="new-filter">
+          <div class="new-square" id="saturation-minus">-</div>
+          <div>Saturation</div>
+          <div class="new-square" id="saturation-plus">+</div>
+        </div>
+        <div class="new-filter">
+          <div class="new-square" id="vibrance-minus">-</div>
+          <div>Vibrance</div>
+          <div class="new-square" id="vibrance-plus">+</div>
+        </div>
+      </div>
+      <div>
+        <button class="new-tool-btn" id="blur-btn">Blur</button>
+        <button class="new-tool-btn" id="crop-btn">Crop</button>
+        <button class="new-tool-btn" id="rotate-btn">Rotate</button>
+        <button class="new-tool-btn" id="scale-btn">Scale</button>
+      </div>
+      <div>
+        <button class="new-remove-btn" id="remove-btn">Remove Filters</button>
+        <button class="new-download-btn" id="download-btn">Download Image</button>
+      </div>
+    </div>
+  </body>
+</html>

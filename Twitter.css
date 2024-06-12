@@ -1,0 +1,226 @@
+body {
+  background-color: rgb(197, 196, 196);
+  margin: 0%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 56px auto;
+}
+
+.nav {
+  background-color: white;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  right: 0px;
+  height: 46px;
+
+  .nav-items {
+    list-style: none;
+    display: flex;
+  }
+  .nav-item {
+    margin-right: 30px;
+    font-weight: bold;
+    color: gray;
+  }
+  .logo {
+    height: 30px;
+    padding: 10px;
+    margin-right: 20px;
+    position: absolute;
+    left: 50%;
+  }
+  .tweet-btn {
+    position: absolute;
+    right: 0px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: #28aae1;
+  }
+}
+
+.body {
+  display: flex;
+  .profile-section {
+    width: 290px;
+    max-height: 350px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    .cover-image {
+      max-width: 300px;
+      max-height: 150px;
+    }
+    .profile-info {
+      display: flex;
+      .profile-image {
+        position: absolute;
+        top: 170px;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+      }
+      .name {
+        margin: 10px;
+        margin-bottom: 0px;
+        margin-left: 120px;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .username {
+        margin: 10px;
+        margin-left: 120px;
+        color: gray;
+        margin-top: 0px;
+        font-size: 14px;
+      }
+    }
+    .upload-btn {
+      margin: 10px;
+      border-radius: 20px;
+      padding: 7px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border: none;
+      font-weight: bold;
+      color: #28aae1;
+      background-color: white;
+      border: 2px solid #28aae1;
+    }
+    .upload-btn:hover {
+      background-color: #28aae1;
+      color: white;
+    }
+    .stats {
+      display: flex;
+      .container {
+        margin-left: 18px;
+        .heading {
+          color: gray;
+          margin-bottom: 5px;
+          margin-top: 5px;
+          font-size: 16px;
+        }
+        .count {
+          color: #28aae1;
+          font-weight: bold;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .feed {
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    .divider {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+    .container {
+      display: flex;
+      .profile-image {
+        margin: 10px;
+        margin-top: 0px;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+      }
+      .tweet {
+        .user {
+          display: flex;
+          .date {
+            font-size: 14px;
+            margin: 3px;
+            color: gray;
+          }
+          .name {
+            font-weight: bold;
+            margin: 3px;
+          }
+          .username {
+            margin: 3px;
+            font-size: 14px;
+            color: gray;
+          }
+        }
+        .content {
+          margin: 0px;
+        }
+      }
+    }
+  }
+
+  .who-to-follow {
+    margin: 10px;
+    width: 290px;
+    max-height: 260px;
+    background-color: white;
+    .heading {
+      margin: 15px;
+    }
+    .container {
+      display: flex;
+      .profile-image {
+        margin: 5px;
+        margin-top: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+      }
+      .other-profile {
+        .user {
+          display: flex;
+          margin-top: 10px;
+          .date {
+            font-size: 14px;
+            margin: 3px;
+            color: gray;
+          }
+          .name {
+            font-weight: bold;
+            font-size: 14px;
+            margin: 3px;
+          }
+          .username {
+            margin: 3px;
+            font-size: 14px;
+            color: gray;
+          }
+        }
+        .follow-btn {
+          margin: 10px;
+          border-radius: 20px;
+          padding: 7px;
+          padding-left: 15px;
+          padding-right: 15px;
+          border: none;
+          font-weight: bold;
+          color: #28aae1;
+          background-color: white;
+          border: 2px solid #28aae1;
+        }
+      }
+    }
+    .divider {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .who-to-follow {
+    display: none;
+  }
+}

@@ -1,0 +1,111 @@
+body {
+  background-color: rgb(197, 196, 196);
+  margin: 0%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 56px auto;
+}
+
+.new-nav {
+  background-color: #318eb7;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  right: 0px;
+  color: white;
+  padding-left: 15px;
+}
+
+.new-browse-btn span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  background-color: rgb(204, 204, 204);
+  padding: 7.5px;
+}
+
+.new-body {
+  background-color: white;
+  height: 70px;
+  display: flex;
+  padding-top: 30px;
+}
+
+.new-input {
+  margin-left: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+.new-footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 220px;
+  text-align: center;
+}
+
+.new-filters {
+  display: flex;
+  justify-content: center;
+}
+
+.new-filter {
+  display: flex;
+}
+
+.new-square {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-color: #318eb7;
+  color: white;
+  border: 1px solid gray;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.new-browse-btn {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.new-tool-btn {
+  background-color: red;
+  width: 80px;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 15px;
+  margin-top: 20px;
+}
+
+.new-remove-btn {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.new-download-btn {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.new-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38vh;
+  overflow: hidden;
+}
